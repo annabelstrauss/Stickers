@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		E14E28211F0EAAC10056025F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14E28201F0EAAC10056025F /* AppDelegate.swift */; };
-		E14E28231F0EAAC10056025F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14E28221F0EAAC10056025F /* ViewController.swift */; };
 		E14E28261F0EAAC10056025F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E14E28241F0EAAC10056025F /* Main.storyboard */; };
 		E14E28281F0EAAC10056025F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E14E28271F0EAAC10056025F /* Assets.xcassets */; };
 		E14E282B1F0EAAC10056025F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E14E28291F0EAAC10056025F /* LaunchScreen.storyboard */; };
 		E14E28361F0EAAC20056025F /* StickersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14E28351F0EAAC20056025F /* StickersTests.swift */; };
 		E14E28411F0EAAC20056025F /* StickersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14E28401F0EAAC20056025F /* StickersUITests.swift */; };
+		E14E284F1F0EAC230056025F /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14E284E1F0EAC230056025F /* CanvasViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		E14E281D1F0EAAC10056025F /* Stickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stickers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E14E28201F0EAAC10056025F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E14E28221F0EAAC10056025F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E14E28251F0EAAC10056025F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E14E28271F0EAAC10056025F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E14E282A1F0EAAC10056025F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		E14E283C1F0EAAC20056025F /* StickersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StickersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E14E28401F0EAAC20056025F /* StickersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickersUITests.swift; sourceTree = "<group>"; };
 		E14E28421F0EAAC20056025F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E14E284E1F0EAC230056025F /* CanvasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				E14E28201F0EAAC10056025F /* AppDelegate.swift */,
-				E14E28221F0EAAC10056025F /* ViewController.swift */,
 				E14E28241F0EAAC10056025F /* Main.storyboard */,
 				E14E28271F0EAAC10056025F /* Assets.xcassets */,
 				E14E28291F0EAAC10056025F /* LaunchScreen.storyboard */,
 				E14E282C1F0EAAC10056025F /* Info.plist */,
+				E14E284E1F0EAC230056025F /* CanvasViewController.swift */,
 			);
 			path = Stickers;
 			sourceTree = "<group>";
@@ -193,6 +193,7 @@
 				TargetAttributes = {
 					E14E281C1F0EAAC10056025F = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = V9NTEK9YLJ;
 						ProvisioningStyle = Automatic;
 					};
 					E14E28301F0EAAC20056025F = {
@@ -259,7 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E14E28231F0EAAC10056025F /* ViewController.swift in Sources */,
+				E14E284F1F0EAC230056025F /* CanvasViewController.swift in Sources */,
 				E14E28211F0EAAC10056025F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +413,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V9NTEK9YLJ;
 				INFOPLIST_FILE = Stickers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.annabel.Stickers;
@@ -424,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V9NTEK9YLJ;
 				INFOPLIST_FILE = Stickers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.annabel.Stickers;
@@ -505,6 +508,7 @@
 				E14E28471F0EAAC20056025F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E14E28481F0EAAC20056025F /* Build configuration list for PBXNativeTarget "StickersTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +517,7 @@
 				E14E284A1F0EAAC20056025F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E14E284B1F0EAAC20056025F /* Build configuration list for PBXNativeTarget "StickersUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +526,7 @@
 				E14E284D1F0EAAC20056025F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
